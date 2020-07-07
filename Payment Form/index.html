@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Paisa Uda </title>
+</head>
+
+<body>
+    <form action="/action_page.php" method="get" class="form-example">
+        <fieldset>
+            <legend>
+                <h3>PaisaUda</h3>
+            </legend>
+            <div class="personal_info">
+
+                <h4> Personal Information</h4>
+                <label for="First Name">First Name: </label> <br>
+                <input type="text" name=" first name" id="first name" required> <br>
+
+                <label for="Last Name">Last Name: </label><br>
+                <input type="text" name="last name" id="last name" required><br>
+
+                <label for="Street Address">Street Address: </label><br>
+                <input type="text" name="street address" id="street address" required><br>
+
+                <label for="City">City: </label><br>
+                <input type="text" name="city" id="city" required><br>
+
+                <label for="State">State: </label><br>
+                <input type="text" name="state city" id="state city" required><br>
+
+                <label for="Pin Code">Zip/Postal Code: </label><br>
+                <input type="number" name="pincode" id="pincode" required><br>
+            </div>
+
+            <div class="credit_card_details">
+                <h4> Credit card Details </h4>
+                <div class="radio_buttons">
+                    <input type="radio" id="Mastercard" name="Card type" value="Mastercard">
+                    <label for="Mastercard">Mastercard</label><br>
+
+                    <input type="radio" id="Visa" name="Card type" value="Visa">
+                    <label for="Visa">Visa</label><br>
+
+                    <input type="radio" id="Discover" name="Card type" value="Discover">
+                    <label for="Discover">Discover</label> <br> <br>
+                </div>
+
+                <div class="credit_card">
+                    <label for="Creditcard number">Enter 16 digit CreditCard number: </label>
+                    <input type="number" name="Creditcard" id="Creditcard" required><br><br>
+                </div>
+
+                <div class="expiration_date">
+                    <label for="Expiration date">Expiration date:</label>
+                    <input type="month" id="month" name="month">
+                </div>
+            </div>
+
+            <div class="form-example">
+                <h5> Special Notes </h5>
+                <p>Check you details again and then Submit </p>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
