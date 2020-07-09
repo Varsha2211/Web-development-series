@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Contact Form </title>
+    <style>
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        select,
+        textarea {
+            width: 45%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        .commentbox {
+            height: 100px;
+            width: 80.5%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: rgb(243, 131, 26);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=cancel] {
+            background-color: rgb(122, 121, 120);
+            width: 40px;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+
+        .container {
+            background-color: lightgrey;
+            width: 800px;
+            border: 15px solid rgb(85, 115, 134);
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form action="/action_page.php">
+
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <input type="email" id="email" name="email" placeholder="Email address">
+            <input type="number" id="number" name="number" placeholder="Telephone number">
+            <input type="text" id="web" name="web" placeholder="Website url">
+
+
+            <select id="department" name="department">
+                <option value="Select department">Select department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Instrumental">Instrumental</option>
+            </select>
+
+            <div class="comment_box">
+                <textarea name="Commentbox" placeholder="Enter Message or Comment"></textarea>
+            <p>Hint: Don't be negative or off topic</p><br>
+            </div>
+
+            <h3> <input type="cancel" value="Cancel">
+                <input type="submit" value="Submit Form"> </h3>
+
+        </form>
+    </div>
+</body>
+
+</html>
