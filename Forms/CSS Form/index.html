@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Form </title>
+    <style>
+        .container {
+            background-color: rgb(127, 15, 219);
+            padding: 10px;
+        }
+
+        textarea {
+            width: 40%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        input[type=submit] {
+            background-color: rgb(122, 121, 120);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type=cancel] {
+            background-color: rgb(122, 121, 120);
+            align-content: center;
+            width: 40px;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="get" class="form-example">
+            <div class="name">
+                <label for="fName">FIRSTNAME &nbsp;</label>
+                <input type="text" name=" name" id=" name" required> <a style="color: White;">
+                    &nbsp;(max 30 charater a-z and A-Z) </a><br><br>
+
+                <label for="Lname">LASTNAME &nbsp; </label>
+                <input type="text" name=" Lname" id=" Lname" required><a style="color: White;">
+                    &nbsp;(max 30 charater a-z and A-Z)</a> <br><br>
+            </div>
+
+            <div class="dob">
+                <label for="dob">DATE OF BIRTH:</label>
+                <select name="day" id="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="jan">january</option>
+                    <option value="feb">Febrary</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select><br><br>
+            </div>
+
+            <div class="email">
+                <label for="email">EMAIL &nbsp;</label>
+                <input type="text" id="email" name="email"><br><br>
+            </div>
+
+            <div class="mobile">
+                <label for="number">MOBILE NUMBER &nbsp;</label>
+                <input type="number" id="number" name="number"><a style="color: White;">&nbsp;(10 digit
+                    number)</a><br><br>
+            </div>
+            <div class="gender">
+                <label for="Gender">Gender &nbsp;</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+            </div>
+
+            <div class="address">
+                <label for="address">ADDRESS &nbsp;</label>
+                <textarea type="text" id="address" name="address"></textarea><br><br>
+
+
+                <label for="city">CITY &nbsp;</label>
+                <input type="text" id="city" name="city"><a style="color: White;"> &nbsp;(max 30 charater a-z and
+                    A-Z)</a><br><br>
+
+                <label for="pincode">PIN CODE &nbsp;</label>
+                <input type="number" id="pincode" name="pincode"><a style="color: White;">&nbsp;(6 digit
+                    number)</a><br><br>
+
+                <label for="state">STATE &nbsp;</label>
+                <input type="text" id="state" name="state"><a style="color: White;">&nbsp;(max 30 charater a-z and
+                    A-Z)</a><br><br>
+
+                <label for="country">COUNTRY &nbsp;</label>
+                <input type="text" id="country" name="country" placeholder="India"><br><br>
+            </div>
+
+            <div class="hobbies">
+                <label for="hobbies">HOBBIES &nbsp;</label>
+
+                <input type="radio" id="drawing" name="hobbies" value="drawing">
+                <label for="drawing">Drawing</label>
+
+                <input type="radio" id="Singing" name="hobbies" value="Singing">
+                <label for="Singing">Singing</label>
+
+                <input type="radio" id="Dancing" name="hobbies" value="Dancing">
+                <label for="Dancing">Dancing</label>
+
+                <input type="radio" id="Sketching" name="hobbies" value="Sketching">
+                <label for="Sketching">Sketching</label>
+
+                <input type="radio" id="others" name="hobbies" value="others">
+                <label for="others">Others</label>
+                <input type="text" id="others" name="hobbies"><br><br>
+            </div>
+
+            <div class="courses">
+                <label for="course">COURSE APPLIED FOR &nbsp;</label>
+
+                <input type="radio" id="bcom" name="course" value="bcom">
+                <label for="bcom">B.com</label>
+
+                <input type="radio" id="bca" name="course" value="bca">
+                <label for="bca">BCA</label>
+
+                <input type="radio" id="bsc" name="course" value="bsc">
+                <label for="bsc">B.SC</label>
+
+                <input type="radio" id="ba" name="course" value="ba">
+                <label for="ba">B.A</label> <br><br>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="cancel" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
