@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Form </title>
+</head>
+
+<body>
+    <form action="" method="get" class="form-example">
+        <fieldset>
+            <legend>
+                <h1>Evergreen Valley College Survey</h1>
+            </legend>
+
+            <h5>Email webmaster | Evergreen Valley</h5>
+
+            <div class="personal">
+                <h3>Personal Information</h3>
+
+                <div class="name">
+                    <label for="Name">Name :</label>
+                    <input type="text" name=" name" id=" name" required> <br>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </div>
+
+                <div class="age">
+                    <label for="Age">Age :</label>
+
+                    <input type="radio" id="Age" name="age" value="8">
+                    <label for="8">
+                        <8< /label>
+
+                            <input type="radio" id="age" name="age" value="18-25">
+                            <label for="18">18-25</label>
+
+                            <input type="radio" id="age" name="age" value="26-40">
+                            <label for="26">26-40</label>
+
+                            <input type="radio" id="age" name="age" value="41-65">
+                            <label for="41">41-65</label>
+
+                            <input type="radio" id="age" name="age" value="65+">
+                            <label for="65+">65+</label>
+                </div>
+            </div>
+
+            <div class="acadmics">
+                <h3>Acadmic Information</h3>
+                <div class="goal">
+                    <label for="goal">Goal : Check all that apply </label><br>
+                    <input type="checkbox" id="1" name="goal1" value="AS">
+                    <label for="1"> Associate Degree</label>
+                    <input type="checkbox" id="2" name="goal2" value="CSU">
+                    <label for="2"> Transfer to CSU</label>
+                    <input type="checkbox" id="3" name="goal3" value="UC">
+                    <label for="3"> Transfer to UC</label>
+                    <input type="checkbox" id="4" name="goal4" value="PE">
+                    <label for="4"> Personal Enrichment</label><br><br>
+                </div>
+
+                <div class="field">
+                    <label for="study">Field of study : Select all that apply , hold CTRL when clicking to select
+                        multiple items</label><br>
+                    <select id="study" name="study" size="6">
+                        <option value="Accounting">Accounting</option>
+                        <option value="Astronomy">Astronomy</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Computer">Computer</option>
+                        <option value="Business">Business</option>
+                        <option value="Health">Health</option>
+                    </select><br><br>
+                </div>
+
+                <div class="buttons">
+                    <label for="comments">Comments :</label><br>
+                    <textarea type="text" id="comments" name="comments"></textarea><br><br>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Send Data">
+                <input type="reset" value="Reset Form">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
