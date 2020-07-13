@@ -1,4 +1,4 @@
-Creating a small garage sale website (Html only) for a friend.
+Creating a small garage sale website for a friend.
 
 1. On this page,heading must be there as friend's Garage Sale-2020
 2. In addition, put a image of the friend and a google maps  link to his house.
