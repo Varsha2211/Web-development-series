@@ -1,4 +1,4 @@
-Create front page of Hindustan Times (Single HTML page )
+Create front page of Hindustan Times
 
 [1] Remove adds
 [2] Must contain headlines and associated post
