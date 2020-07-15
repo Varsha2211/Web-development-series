@@ -1,0 +1,30 @@
+div.container {
+    align-content: center;
+    background-color: white;
+    width: 700px;
+    border: 10px solid orange;
+    padding: 50px;
+    margin: 30px;
+    font-family: calibri;
+}
+
+table {
+    width: 75%;
+}
+
+hr {
+    height: 3px;
+    background-color: tomato;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+table.a {
+    width: 230%;
+}
+
+table.b {
+    width: 20%;
+}
