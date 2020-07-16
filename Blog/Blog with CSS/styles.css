@@ -1,0 +1,108 @@
+.container{
+    width: 900px;
+    font-family: calibri;;
+    display: flex;
+}
+
+div.sidebar {
+    display: inline-block;
+    background-color: rgba(16, 44, 59, 0.89);
+    text-align: right;
+    width: 20%;
+    padding: 150px 30px 130px 20px;   
+    /* top right bottom left */
+    color: white;
+}
+
+div.main {
+    display: inline-block;
+    background-color: white;
+    width: 70%;
+    padding: 0px 10px 0px 20px;
+}
+
+/* for buttons */
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #008CBA;
+}
+
+.button3 {
+    background-color: #f44336;
+}
+
+.button4 {
+    border-radius: 3px;
+    border-color: white;
+    background-color: rgba(24, 48, 61, 0.89);
+    color: white;
+    font-size: 10px;
+    border-width: 1px;
+    padding: 7px 9px;
+
+}
+
+/* for links */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f44336;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+ /* for image */
+img {
+    border-radius: 50%;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p.d{
+    font-family:Calibri;
+    font-size: 20px;
+}
+
+p.a {
+    color: grey;
+    font-size: 13px;
+}
+
+p.b {
+    font-size: 10;
+}
+
+a {
+    color: rgb(9, 190, 245);
+    font-size: 13px;
+}
+
+img{
+    float:right;
+    width:40px ;
+    height:40px;
+}
