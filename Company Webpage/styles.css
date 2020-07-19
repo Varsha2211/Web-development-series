@@ -1,0 +1,168 @@
+body{
+    background-color: #46615b;
+    width: 1300px;
+}
+
+/*=================================================HEADER SECTION======================================================*/
+
+div.header{  
+    width:94%;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    background-color: #e5e4d7;
+}
+
+.logo{
+    display: inline-block;
+    margin: 10px;
+    width: 190px;
+    height: 90px;
+    background-image: url("images/1.png");
+    background-size: contain;
+}
+
+#companyname{
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 200px;
+    margin: 10px;
+    font-size: 200%;
+    font-weight: 900;
+    font-family: open sans;
+    color: rgb(58, 47, 223);
+}
+
+/*=================================================BODY SECTION======================================================*/
+.main{
+    display: inline-block;
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    padding-top: 0px;
+
+}
+
+div.leftbox{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+    background-color: #e5e4d7;
+    text-align: center;
+}
+
+div.rightbox{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 15px;
+    width: 62%;
+    background-color: #e5e4d7;
+    text-align: center;
+}
+
+a.leftbox{
+    text-align: center;
+    font-size: 40px;
+}
+
+a:link {
+    color: rgb(231, 107, 58);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(19, 18, 18);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color:rgb(74, 163, 236);
+  }
+  
+  /* selected link */
+  a:active {
+    color: red;
+  }
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: open sans;
+    color: rgba(44, 22, 243, 0.932);
+    background-color: rgb(235, 118, 134);
+}
+#overflow {
+    background: #e5e4d7;
+    color: rgb(17, 17, 17);
+    margin: 20px;
+    padding: 15px;
+    width: 92%;
+    height: 200px;
+    font-family: open sans;
+    font-size: 20px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+  }
+
+/*=================================================ABOUT US PAGE======================================================*/
+
+div.aboutus{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 20px;
+    width: 94%;
+    background-color: #e5e4d7;
+    text-align: left;
+}
+#us{
+    display: inline-block;
+    width:50%;
+    font-family: open sans;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#image{
+    display: inline-block;
+    width: 30%;
+    margin-left:50px;
+}
+
+.b{
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
+    text-align:left;
+    font-weight: 800;
+    color: rgba(8, 63, 27, 0.808);
+}
+
+/*=================================================CONTACT US PAGE======================================================*/
+#contact{
+    text-align: center;
+    width: 94%;
+    font-family: open sans;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #e5e4d7;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
