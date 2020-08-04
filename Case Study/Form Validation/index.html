@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renting Page</title>
+  </head>
+  <body>
+      <h2><span>Rent Toys</span></h2>
+      <table>
+          <tr>
+              <td>Toy Name</td>
+              <td><select>
+                  <option>Bicycle</option>
+                  <option>Train</option>
+                  <option>Doll</option>
+                  <option>Teddy Bear</option>
+                  <option>Kite</option>
+                  <option>Airplane</option>
+                  <option>Bus</option>
+                  <option>Art Farm</option>
+                  <option>Lego Mind</option>
+                  <option>Speak and Spell</option>
+              </select></td>
+          </tr>
+          <tr>
+              <td>Customer Name</td>
+              <td><input type="text" id="name" onblur="nameValidation()"></td>
+          </tr>
+          <tr>
+              <td>Rent Start Date</td>
+              <td><input type="date" id="date" onblur="dateValidation"></td>
+          </tr>
+          <tr>
+              <td>Rent Tenure</td>
+              <td><input type="text" id="tenure"></td>
+          </tr>
+          <tr>
+              <td>Number of Toys Available</td>
+              <td><input type="text" id="toyAvailable"></td>
+          </tr>
+          <tr>
+              <td>Enter Number of Toys</td>
+              <td><input type="text" id="quantity" max="5"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><input type="submit" value="Submit Query" onclick="conformation"></td>
+          </tr>
+      </table>
+      
+      <script>
+            function conformation() {
+                var quantity = document.getElementById("quantity").value;
+                var name = document.getElementById("name").value;
+                var date1 = new Date(); 
+                var date2 = document.getElementById("date");
+                  
+                var Difference_In_Time = date2.getTime() - date1.getTime(); 
+                  
+                var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+                var rentCost = 100*quantity*Difference_In_Days;
+                alert("RentCost :" rentCost);
+                alert("Thank you for order" name);
+            }
+            
+            function nameValidation() {
+                var letter = /^[0-9a-zA-Z]+$/;
+                var x = document.getElementById("name").value;
+                if (x.length >=5 && x.match(letters)) {
+                    continue
+                }
+                else {
+                    alert("Invalid Name")
+                }
+            }
+            
+            function dateValidation() {
+            var today = new Date().getTime();
+            var idate=document.getElementById("date");
+                idate = idate.split("/");
+        
+            idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
+            if (today - idate) > 0) {
+                alert("Please Enter Future Date!")
+            }
+            }
+            
+            function tenureValidation() {
+                var tenure= document.getElementById("tenure").value;
+                if (tenure>30) {
+                    alert("We cannot rent over 30 days SORRY!!!")
+                }
+            }
+      </script>
+  </body>
+</html>
