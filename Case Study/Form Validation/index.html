@@ -27,11 +27,11 @@
           </tr>
           <tr>
               <td>Rent Start Date</td>
-              <td><input type="date" id="date" onblur="dateValidation"></td>
+              <td><input type="date" id="date" onblur="dateValidation()"></td>
           </tr>
           <tr>
               <td>Rent Tenure</td>
-              <td><input type="text" id="tenure"></td>
+              <td><input type="text" id="tenure" onblur="tenureValidation()"></td>
           </tr>
           <tr>
               <td>Number of Toys Available</td>
@@ -43,44 +43,41 @@
           </tr>
           <tr>
               <td></td>
-              <td><input type="submit" value="Submit Query" onclick="conformation"></td>
+              <td><input type="submit" value="Submit Query" onclick="confirmation()"></td>
           </tr>
       </table>
       
       <script>
-            function conformation() {
+            function confirmation() {
                 var quantity = document.getElementById("quantity").value;
                 var name = document.getElementById("name").value;
-                var date1 = new Date(); 
-                var date2 = document.getElementById("date");
+                var date1 = new Date().getTime(); 
+                var date2 = document.getElementById("date").value;
+                date2 = date2.split("-");
+                date2 = new Date(parseInt(date2[2]), parseInt(date2[0]), parseInt(date2[1])).getTime();
                   
-                var Difference_In_Time = date2.getTime() - date1.getTime(); 
-                  
-                var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+                var Difference_In_Days = (date2 - date1) / (1000 * 3600 * 24); 
                 var rentCost = 100*quantity*Difference_In_Days;
-                alert("RentCost :" rentCost);
-                alert("Thank you for order" name);
+                alert("RentCost : "+ rentCost);
+                alert("Thank you for order "+ name);
             }
             
             function nameValidation() {
                 var letter = /^[0-9a-zA-Z]+$/;
                 var x = document.getElementById("name").value;
-                if (x.length >=5 && x.match(letters)) {
-                    continue
-                }
+                if (x.length >=5 && x.match(letter)) { }
                 else {
-                    alert("Invalid Name")
+                    alert("Invalid Name");
                 }
             }
             
             function dateValidation() {
             var today = new Date().getTime();
-            var idate=document.getElementById("date");
-                idate = idate.split("/");
-        
-            idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
-            if (today - idate) > 0) {
-                alert("Please Enter Future Date!")
+            var idate=document.getElementById("date").value;
+                idate = idate.split("-");
+            idate = new Date(parseInt(idate[2]), parseInt(idate[0]), parseInt(idate[1])).getTime();
+            if ((idate - today) < 0) {
+                alert("Please Enter Future Date!");
             }
             }
             
