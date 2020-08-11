@@ -7,30 +7,30 @@
 </head>
 
 <body>
-    <form action="/action_page.php" method="get" class="form-example">
+    <form action="/action_page.php">
         <fieldset>
             <legend>
                 <h3>PaisaUda</h3>
             </legend>
-            <div class="personal">
+            <div class="personal_info">
 
                 <h4>Personal Information</h4>
-                <label for="First Name">First Name: </label> <br>
+                <label for="firstname">First Name: </label> <br>
                 <input type="text" id="firstname" required> <br>
 
-                <label for="Last Name">Last Name: </label><br>
+                <label for="lastname">Last Name: </label><br>
                 <input type="text" id="lastname" required><br>
 
-                <label for="Street Address">Street Address: </label><br>
-                <input type="text" id="streetaddress" required><br>
+                <label for="address">Street Address: </label><br>
+                <input type="text" id="address" required><br>
 
-                <label for="City">City: </label><br>
+                <label for="city">City: </label><br>
                 <input type="text" id="city" required><br>
 
-                <label for="State">State: </label><br>
+                <label for="state">State: </label><br>
                 <input type="text" id="state" required><br>
 
-                <label for="Pin Code">Zip/Postal Code: </label><br>
+                <label for="pincode">Zip/Postal Code: </label><br>
                 <input type="number" id="pincode" required><br>
             </div>
 
@@ -38,27 +38,27 @@
                 <h4> Credit card Details </h4>
                 <div class="radio_buttons">
                     <input type="radio" id="mastercard" value="Mastercard">
-                    <label for="Mastercard">Mastercard</label><br>
+                    <label for="mastercard">Mastercard</label><br>
 
                     <input type="radio" id="visa" value="Visa">
-                    <label for="Visa">Visa</label><br>
+                    <label for="visa">Visa</label><br>
 
                     <input type="radio" id="discover" value="Discover">
-                    <label for="Discover">Discover</label> <br> <br>
+                    <label for="discover">Discover</label> <br> <br>
                 </div>
 
                 <div class="credit_card">
-                    <label for="Creditcard number">Enter 16 digit CreditCard number: </label>
-                    <input type="number"  id="reditcard" required><br><br>
+                    <label for="creditcard">Enter 16 digit CreditCard number: </label>
+                    <input type="number"  id="creditcard" required><br><br>
                 </div>
 
                 <div class="expiration_date">
-                    <label for="Expiration date">Expiration date:</label>
+                    <label for="month">Expiration date:</label>
                     <input type="month" id="month">
                 </div>
             </div>
 
-            <div class="form-example">
+            <div class="form_example">
                 <h5>Special Notes</h5>
                 <p>Check you details again and then Submit </p>
             </div>
