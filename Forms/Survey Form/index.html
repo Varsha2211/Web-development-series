@@ -29,11 +29,10 @@
                 </div>
 
                 <div class="age">
-                    <label for="Age">Age :</label>
+                    <label for="Age"><b>Age :</b></label>
 
                     <input type="radio" id="Age" name="age" value="8">
-                    <label for="8">
-                        <8< /label>
+                    <label for="8"> less than 8</label>
 
                             <input type="radio" id="age" name="age" value="18-25">
                             <label for="18">18-25</label>
@@ -52,20 +51,25 @@
             <div class="acadmics">
                 <h3>Acadmic Information</h3>
                 <div class="goal">
-                    <label for="goal">Goal : Check all that apply </label><br>
-                    <input type="checkbox" id="1" name="goal1" value="AS">
-                    <label for="1"> Associate Degree</label>
-                    <input type="checkbox" id="2" name="goal2" value="CSU">
-                    <label for="2"> Transfer to CSU</label>
-                    <input type="checkbox" id="3" name="goal3" value="UC">
-                    <label for="3"> Transfer to UC</label>
-                    <input type="checkbox" id="4" name="goal4" value="PE">
-                    <label for="4"> Personal Enrichment</label><br><br>
+                    <div>
+                        <label for="goal"><b>Goal : Check all that apply</b></label>
+                    </div>
+                    <input type="checkbox" id="goal" value="AS">
+                    <label for="goal1"> Associate Degree</label>
+                    <input type="checkbox" id="goal1" value="CSU">
+                    <label for="goal2"> Transfer to CSU</label>
+                    <input type="checkbox" id="goal2" value="UC">
+                    <label for="goal3"> Transfer to UC</label>
+                    <input type="checkbox" id="goal3" value="PE">
+                    <label for="goal4">Personal Enrichment</label>
                 </div>
 
                 <div class="field">
-                    <label for="study">Field of study : Select all that apply , hold CTRL when clicking to select
-                        multiple items</label><br>
+                    <div class="label">
+                        <label for="study"><b>Field of study : Select all that apply ,hold CTRL when clicking to select
+                            multiple items</b></label>
+                    </div>
+
                     <select id="study" name="study" size="6">
                         <option value="Accounting">Accounting</option>
                         <option value="Astronomy">Astronomy</option>
@@ -73,12 +77,12 @@
                         <option value="Computer">Computer</option>
                         <option value="Business">Business</option>
                         <option value="Health">Health</option>
-                    </select><br><br>
+                    </select>
                 </div>
 
                 <div class="buttons">
-                    <label for="comments">Comments :</label><br>
-                    <textarea type="text" id="comments"></textarea><br><br>
+                    <div class="label"><label for="comments"><b>Comments :</b></label></div>
+                    <textarea type="text" id="comments"></textarea>
                 </div>
             </div>
 
