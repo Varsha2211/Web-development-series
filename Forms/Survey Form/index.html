@@ -3,87 +3,82 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Form</title>
+    <title>Survey Form</title>
 </head>
 
 <body>
+    <h1>Evergreen Valley College Survey</h1>
     <form>
         <fieldset>
-            <legend>
-                <h1>Evergreen Valley College Survey</h1>
-            </legend>
+            <h3>Personal Information</h3>
 
-            <h5>Email webmaster | Evergreen Valley</h5>
-
-            <div class="personal">
-                <h3>Personal Information</h3>
-
-                <div class="name">
-                    <label for="Name">Name :</label>
-                    <input type="text" name=" name" id=" name" required> <br>
-                </div>
-
-                <div class="email">
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email"><br><br>
-                </div>
-
-                <div class="age">
-                    <label for="age"><b>Age :</b></label>
-
-                    <input type="radio" id="age1" value="8">
-                    <label for="age1"> less than 8</label>
-
-                            <input type="radio" id="age2" value="18-25">
-                            <label for="age2">18-25</label>
-
-                            <input type="radio" id="age3" name="age" value="26-40">
-                            <label for="age3">26-40</label>
-
-                            <input type="radio" id="age4" value="41-65">
-                            <label for="age4">41-65</label>
-
-                            <input type="radio" id="age5" value="65+">
-                            <label for="age5">65+</label>
-                </div>
+            <div class="name">
+                <label for="Name"><b>Name :</b></label>
+                <input type="text" id="name" required>
             </div>
 
-            <div class="acadmics">
-                <h3>Acadmic Information</h3>
-                <div class="goal">
-                    <div>
-                        <label for="goal"><b>Goal : Check all that apply</b></label>
-                    </div>
-                    <input type="checkbox" id="goal" value="AS">
-                    <label for="goal1"> Associate Degree</label>
-                    <input type="checkbox" id="goal1" value="CSU">
-                    <label for="goal2"> Transfer to CSU</label>
-                    <input type="checkbox" id="goal2" value="UC">
-                    <label for="goal3"> Transfer to UC</label>
-                    <input type="checkbox" id="goal3" value="PE">
-                    <label for="goal4">Personal Enrichment</label>
+            <div class="email">
+                <label for="email"><b>Email :</b></label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="age">
+                <label for="age"><b>Age :</b></label>
+
+                <input type="radio" id="age1" value="8">
+                <label for="age1"> less than 8</label>
+
+                <input type="radio" id="age2" value="18-25">
+                <label for="age2">18-25</label>
+
+                <input type="radio" id="age3" name="age" value="26-40">
+                <label for="age3">26-40</label>
+
+                <input type="radio" id="age4" value="41-65">
+                <label for="age4">41-65</label>
+
+                <input type="radio" id="age5" value="65+">
+                <label for="age5">65+</label>
+            </div>
+
+            <h3>Acadmic Information</h3>
+
+            <div class="goal">
+                <div class="label">
+                    <label for="goal"><b>Goal : Check all that apply</b></label>
+                </div>
+                <input type="checkbox" id="goal" value="AS">
+                <label for="goal"> Associate Degree</label>
+
+                <input type="checkbox" id="goal1" value="CSU">
+                <label for="goal1"> Transfer to CSU</label>
+
+                <input type="checkbox" id="goal2" value="UC">
+                <label for="goal2"> Transfer to UC</label>
+
+                <input type="checkbox" id="goal3" value="PE">
+                <label for="goal3">Personal Enrichment</label>
+            </div>
+
+            <div class="field_of_study">
+                <div class="label">
+                    <label for="study"><b>Field of study :
+                            Select all that apply ,hold CTRL when clicking to select multiple items</b></label>
                 </div>
 
-                <div class="field">
-                    <div class="label">
-                        <label for="study"><b>Field of study : Select all that apply ,hold CTRL when clicking to select
-                            multiple items</b></label>
-                    </div>
+                <select id="study" size="6">
+                    <option value="Accounting">Accounting</option>
+                    <option value="Astronomy">Astronomy</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Computer">Computer</option>
+                    <option value="Business">Business</option>
+                    <option value="Health">Health</option>
+                </select>
+            </div>
 
-                    <select id="study" name="study" size="6">
-                        <option value="Accounting">Accounting</option>
-                        <option value="Astronomy">Astronomy</option>
-                        <option value="Chemistry">Chemistry</option>
-                        <option value="Computer">Computer</option>
-                        <option value="Business">Business</option>
-                        <option value="Health">Health</option>
-                    </select>
-                </div>
-
-                <div class="buttons">
-                    <div class="label"><label for="comments"><b>Comments :</b></label></div>
-                    <textarea type="text" id="comments"></textarea>
-                </div>
+            <div class="comment_box">
+                <div class="label"><label for="comments"><b>Comments :</b></label></div>
+                <textarea type="text" id="comments"></textarea>
             </div>
 
             <div class="buttons">
@@ -92,6 +87,7 @@
             </div>
         </fieldset>
     </form>
+
 </body>
 
 </html>
