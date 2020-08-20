@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Customer Registration Form</title>
+</head>
+
+<body>
+    <h1>Customer Registration Form</h1>
+    <table>
+        <tr>
+            <td>Customer Name</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="text" id="mob"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <div id="gender" name="gender">
+                    <input type="radio" name="gender_type" value="Male">Male
+                    <input type="radio" name="gender_type" value="Female">Female
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="submit" onclick="details()"></td>
+        </tr>
+    </table>
+    <div id="nameResult"></div>
+    <div id="mobResult"></div>
+    <div id="genderResult"></div>
+
+    <script>
+
+        function details() {
+            var name = document.getElementById("name").value;
+            document.getElementById("nameResult").innerHTML = name;
+
+            var num = document.getElementById("mob").value;
+            document.getElementById("mobResult").innerHTML = num;
+
+            document.getElementsByName('gender_type')
+            .forEach(radio => {
+                if (radio.checked) {
+                    document.getElementById("genderResult").innerHTML = radio.value;
+                }
+            })  
+        }
+    </script>
+
+</body>
+
+</html>
